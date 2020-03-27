@@ -3,39 +3,101 @@
 //REMEMBER to comment out console logs
 
 //Display personal welcome
-var name = prompt('Hi. What\'s your name?');
-    console.log('The user\'s name is: ' + name);
-    alert('Hi ' + name + '. Welcome!');
+var userName = prompt('Hi. What\'s your name?');
+console.log('The user\'s name is: ' + userName);
+alert('Hi ' + userName + '. Welcome!');
 
 //Ask 5 questions.  Accept y/n or yes/no in caps or lower.  Alert with answer right or wrong
-//Q1 = ready??
-    var name = prompt('Are you ready to play a quiz?');
-    console.log('Are you ready to play a quiz?');
-    alert('Are you ready to play a quiz?');
+//q1 = ready?
+var ready;
+var q1 = prompt('Are you ready to play a quiz?');
+ready = q1.toLowerCase();
 
-//Q2 = Favorite color?
-var name = prompt('Take a look at my site. Do you think my favorite color is purple?');
-//conditional
-//accept y/n or yes/no caps and lower
-console.log('The user\'s name is: ' + name);
-alert('Hi ' + name + '! (please click OK as needed)');
+if ((ready === 'y') || (ready === 'yes')){
+  console.log ('Great.  Let\'s start.');
+  alert ('Great.  Let\'s start.');
+}
+else if ((ready ==='n') || (ready ==='no')){
+  console.log ('Ok.  Take a deep breath and refresh the page when you are ready');
+  alert('Take a deep breath.  It\'ll be ok.  Here we go!');
+}
+else{
+  console.log ('I said....Are.  You.  Ready??');
+  alert('I said....Are.  You.  Ready??');
+}
+
+//q2 = Favorite color?
+var color;
+var q2 = prompt('Take a look at my site. Do you think my favorite color is purple?');
+ready = q2.toLowerCase();
+
+if ((color === 'y') || (color === 'yes')){
+  console.log ('It\'s obvious, isn\'t it!');
+  alert ('It\'s obvious, isn\'t it!');
+}
+else if ((color ==='n') || (color ==='no')){
+  console.log ('Really?  It\'s not obvious?!');
+  alert('Really?  It\'s not obvious?!');
+}
+else{
+  console.log ('You\'re not reading the question, are you?');
+  alert('You\'re not reading the question, are you?');
+}
 
 //Q3 = Greek name?
-var name = prompt('Do you think my last name is Greek?');
-console.log('The user\'s name is: ' + name);
-alert('Hi ' + name + '! (please click OK as needed)');
+var greek;
+var q3 = prompt('Do you think my last name is Greek?');
+ready = q3.toLowerCase();
+
+if ((greek === 'y') || (greek === 'yes')){
+  console.log ('Yep. The spelling gives it away');
+  alert ('Yep. The spelling gives it away');
+}
+else if ((greek ==='n') || (greek ==='no')){
+  console.log ('My name and my nose are Greek.  You couldn\'t tell?');
+  alert('My name and my nose are Greek.  You couldn\'t tell?');
+}
+else{
+  console.log ('These questions aren\'t THAT hard.');
+  alert('These questions aren\'t THAT hard.');
+}
 
 //Q4 = Education
-var name = prompt('Does anybody reallllly need 3 Master\'s Degrees?');
-console.log('The user\'s name is: ' + name);
-alert('Hi ' + name + '! (please click OK as needed)');
+var degree;
+var q4 = prompt('Do you think my last name is Greek?');
+degree = q4.toLowerCase();
+
+if ((degree === 'y') || (degree === 'yes')){
+  console.log ('I know, right?!');
+  alert ('I know, right?!');
+}
+else if ((degree ==='n') || (degree ==='no')){
+  console.log ('Well....I like to learn');
+  alert('Well....I like to learn');
+}
+else{
+  console.log ('C\'mon! Pay attention!');
+  alert('C\'mon! Pay attention!');
+}
 
 //Q5 = Goals
-var name = prompt('Work from home is pretty sweet, isn\'t it?');
-console.log('The user\'s name is: ' + name);
-alert('Hi ' + name + '! (please click OK as needed)');
+var goal;
+var q5 = prompt('Working from home is pretty sweet, isn\'t it?');
+degree = q5.toLowerCase();
 
+if ((goal === 'y') || (goal === 'yes')){
+  console.log ('I know, right?!');
+  alert ('I know, right?!');
+}
+else if ((goal ==='n') || (goal ==='no')){
+  console.log ('Weirdo. I guess you like leaving your house.');
+  alert('Weirdo. I guess you like leaving your house.');
+}
+else{
+  console.log ('I give up!');
+  alert('I give up!');
+}
 
 //display final message including name
-    console.log('Thanks for playing, ' + name);
-    alert('Thanks for playing, ' + name);
+console.log('Thanks for playing, ' + userName);
+alert('Thanks for playing, ' + userName);
