@@ -29,7 +29,7 @@ else{
 //q2 = Favorite color?
 var color;
 var q2 = prompt('Take a look at my site. Do you think my favorite color is purple?');
-ready = q2.toLowerCase();
+color = q2.toLowerCase();
 
 if ((color === 'y') || (color === 'yes')){
   console.log ('It\'s obvious, isn\'t it!');
@@ -47,7 +47,7 @@ else{
 //Q3 = Greek name?
 var greek;
 var q3 = prompt('Do you think my last name is Greek?');
-ready = q3.toLowerCase();
+greek = q3.toLowerCase();
 
 if ((greek === 'y') || (greek === 'yes')){
   console.log ('Yep. The spelling gives it away');
@@ -64,7 +64,7 @@ else{
 
 //Q4 = Education
 var degree;
-var q4 = prompt('Do you think my last name is Greek?');
+var q4 = prompt('Does anyone realllly need 3 Master\'s degrees?');
 degree = q4.toLowerCase();
 
 if ((degree === 'y') || (degree === 'yes')){
@@ -83,11 +83,11 @@ else{
 //Q5 = Goals
 var goal;
 var q5 = prompt('Working from home is pretty sweet, isn\'t it?');
-degree = q5.toLowerCase();
+goal = q5.toLowerCase();
 
 if ((goal === 'y') || (goal === 'yes')){
-  console.log ('I know, right?!');
-  alert ('I know, right?!');
+  console.log ('Yoga Pants!!');
+  alert ('Yoga Pants!!');
 }
 else if ((goal ==='n') || (goal ==='no')){
   console.log ('Weirdo. I guess you like leaving your house.');
