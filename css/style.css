@@ -47,11 +47,15 @@ ul li::before{
 ol{
     font-size: 16px;
     margin-right: 150px;
-    margin-left: 150px;
+    margin-left: 175px;
     line-height: 2;
     margin-bottom: 40px;
     list-style-type: decimal;
+    color: rebeccapurple;
+    column-count: 2;
+    column-gap: 50px;
 }
+
 
 footer{
     background-color: #bebebe;
