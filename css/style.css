@@ -1,16 +1,9 @@
 body{
-    /*background-color: #f6e9fc;*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(../images/purplepattern.jpg);
     background-repeat: repeat;
 }
 
-/*header{
-    background-image: url(../images/purplepattern.jpg);
-    background-repeat: repeat-x;
-    height: 150px;
-    width: 100%;
-}*/
 
 .container{
     background: #f6e9fc;
