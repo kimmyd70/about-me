@@ -166,7 +166,6 @@ else{
   //console.log ('Yay. You guessed one! The countries are: ');
   alert ('Yay. You guessed one! The countries are: ');
   countryRight = true;
-  correct ++;
 }
 
 //show country list
