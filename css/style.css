@@ -49,19 +49,18 @@ ul li::before{
 
 ol{
     font-size: 16px;
-    margin-left: 400px;
-    margin-right: 300px;
-    line-height: 2;
-    margin-bottom: 40px;
+    margin-left: 300px;
+    line-height: 1.5;
     list-style-type: decimal;
     column-count: 2;
-    column-gap: 110px;
+    column-gap: auto;
     
 }
 
 
-#topten{
-    margin-left: 350px;
+.topten{
+    margin-left: 275px;
+    margin-bottom: 25px;
     text-decoration: underline;
     text-decoration-color: rebeccapurple;
     text-decoration-style: double;
