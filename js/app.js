@@ -14,39 +14,44 @@ var correct = 0;
 //Ask 5 questions.  Accept y/n or yes/no in caps or lower.  Alert with answer right or wrong
 //q1 = ready?
 
-var ready = prompt('Are you ready to play a quiz?').toLowerCase();
+function askReady(){
+  var ready = prompt('Are you ready to play a quiz?').toLowerCase();
 
-if ((ready === 'y') || (ready === 'yes')){
-  //console.log ('Great.  Let\'s start.');
-  alert ('Great.  Let\'s start.');
-  correct ++;
+  if ((ready === 'y') || (ready === 'yes')){
+    //console.log ('Great.  Let\'s start.');
+    alert ('Great.  Let\'s start.');
+    correct ++;
+  }
+  else if ((ready ==='n') || (ready ==='no')){
+    //console.log ('Ok.  Take a deep breath and refresh the page when you are ready');
+    alert('Take a deep breath.  It\'ll be ok.  Here we go!');
+  }
+  else{
+    //console.log ('I said....Are.  You.  Ready??');
+    alert('I said....Are.  You.  Ready??');
+  }
 }
-else if ((ready ==='n') || (ready ==='no')){
-  //console.log ('Ok.  Take a deep breath and refresh the page when you are ready');
-  alert('Take a deep breath.  It\'ll be ok.  Here we go!');
-}
-else{
-  //console.log ('I said....Are.  You.  Ready??');
-  alert('I said....Are.  You.  Ready??');
-}
+askReady();
 
 //q2 = Favorite color?
 
-var color = prompt('Take a look at my site. Do you think my favorite color is purple?').toLowerCase();
+  var color = prompt('Take a look at my site. Do you think my favorite color is purple?').toLowerCase();
 
-if ((color === 'y') || (color === 'yes')){
-  //console.log ('It\'s obvious, isn\'t it!');
-  alert ('It\'s obvious, isn\'t it!');
-  correct ++;
-}
-else if ((color ==='n') || (color ==='no')){
-  //console.log ('Really?  It\'s not obvious?!');
-  alert('Really?  It\'s not obvious?!');
-}
-else{
-  //console.log ('You\'re not reading the question, are you?');
-  alert('You\'re not reading the question, are you?');
-}
+  if ((color === 'y') || (color === 'yes')){
+    //console.log ('It\'s obvious, isn\'t it!');
+    alert ('It\'s obvious, isn\'t it!');
+    correct ++;
+  }
+  else if ((color ==='n') || (color ==='no')){
+    //console.log ('Really?  It\'s not obvious?!');
+    alert('Really?  It\'s not obvious?!');
+  }
+  else{
+    //console.log ('You\'re not reading the question, are you?');
+    alert('You\'re not reading the question, are you?');
+  }
+
+
 
 //Q3 = Greek name?
 var greek = prompt('Do you think my last name is Greek?').toLowerCase();
