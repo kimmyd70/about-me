@@ -35,6 +35,7 @@ askReady();
 
 //q2 = Favorite color?
 
+function askColor(){
   var color = prompt('Take a look at my site. Do you think my favorite color is purple?').toLowerCase();
 
   if ((color === 'y') || (color === 'yes')){
@@ -50,8 +51,8 @@ askReady();
     //console.log ('You\'re not reading the question, are you?');
     alert('You\'re not reading the question, are you?');
   }
-
-
+}
+askColor();
 
 //Q3 = Greek name?
 var greek = prompt('Do you think my last name is Greek?').toLowerCase();
