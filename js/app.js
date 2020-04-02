@@ -75,7 +75,7 @@ function askGreek(){
 askGreek();
 
 //Q4 = Education
-
+function askDegree(){
   var degree = prompt('Does anyone realllly need 3 Master\'s degrees?').toLowerCase();
 
   if ((degree === 'y') || (degree === 'yes')){
@@ -91,7 +91,8 @@ askGreek();
     //console.log ('C\'mon! Pay attention!');
     alert('C\'mon! Pay attention!');
   }
-
+}
+askDegree();
 
 //Q5 = Goals
 var goal = prompt('Working from home is pretty sweet, isn\'t it?').toLowerCase();
