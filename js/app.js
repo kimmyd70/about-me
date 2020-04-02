@@ -55,38 +55,43 @@ function askColor(){
 askColor();
 
 //Q3 = Greek name?
-var greek = prompt('Do you think my last name is Greek?').toLowerCase();
+function askGreek(){
+  var greek = prompt('Do you think my last name is Greek?').toLowerCase();
 
-if ((greek === 'y') || (greek === 'yes')){
-  //console.log ('Yep. The spelling gives it away');
-  alert ('Yep. The spelling gives it away');
-  correct ++;
+  if ((greek === 'y') || (greek === 'yes')){
+    //console.log ('Yep. The spelling gives it away');
+    alert ('Yep. The spelling gives it away');
+    correct ++;
+  }
+  else if ((greek ==='n') || (greek ==='no')){
+    //console.log ('My name and my nose are Greek.  You couldn\'t tell?');
+    alert('My name and my nose are Greek.  You couldn\'t tell?');
+  }
+  else{
+    //console.log ('These questions aren\'t THAT hard.');
+    alert('These questions aren\'t THAT hard.');
+  }
 }
-else if ((greek ==='n') || (greek ==='no')){
-  //console.log ('My name and my nose are Greek.  You couldn\'t tell?');
-  alert('My name and my nose are Greek.  You couldn\'t tell?');
-}
-else{
-  //console.log ('These questions aren\'t THAT hard.');
-  alert('These questions aren\'t THAT hard.');
-}
+askGreek();
 
 //Q4 = Education
-var degree = prompt('Does anyone realllly need 3 Master\'s degrees?').toLowerCase();
 
-if ((degree === 'y') || (degree === 'yes')){
-  //console.log ('I know, right?!');
-  alert ('I know, right?!');
-  correct ++;
-}
-else if ((degree ==='n') || (degree ==='no')){
-  //console.log ('Well....I like to learn');
-  alert('Well....I like to learn');
-}
-else{
-  //console.log ('C\'mon! Pay attention!');
-  alert('C\'mon! Pay attention!');
-}
+  var degree = prompt('Does anyone realllly need 3 Master\'s degrees?').toLowerCase();
+
+  if ((degree === 'y') || (degree === 'yes')){
+    //console.log ('I know, right?!');
+    alert ('I know, right?!');
+    correct ++;
+  }
+  else if ((degree ==='n') || (degree ==='no')){
+    //console.log ('Well....I like to learn');
+    alert('Well....I like to learn');
+  }
+  else{
+    //console.log ('C\'mon! Pay attention!');
+    alert('C\'mon! Pay attention!');
+  }
+
 
 //Q5 = Goals
 var goal = prompt('Working from home is pretty sweet, isn\'t it?').toLowerCase();
