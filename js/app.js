@@ -95,21 +95,24 @@ function askDegree(){
 askDegree();
 
 //Q5 = Goals
-var goal = prompt('Working from home is pretty sweet, isn\'t it?').toLowerCase();
+function askGoal(){
+  var goal = prompt('Working from home is pretty sweet, isn\'t it?').toLowerCase();
 
-if ((goal === 'y') || (goal === 'yes')){
-  //console.log ('Yoga Pants!!');
-  alert ('Yoga Pants!!');
-  correct ++;
+  if ((goal === 'y') || (goal === 'yes')){
+    //console.log ('Yoga Pants!!');
+    alert ('Yoga Pants!!');
+    correct ++;
+  }
+  else if ((goal ==='n') || (goal ==='no')){
+    //console.log ('Weirdo. I guess you like leaving your house.');
+    alert('Weirdo. I guess you like leaving your house.');
+  }
+  else{
+    //console.log ('I give up!');
+    alert('I give up!');
+  }
 }
-else if ((goal ==='n') || (goal ==='no')){
-  //console.log ('Weirdo. I guess you like leaving your house.');
-  alert('Weirdo. I guess you like leaving your house.');
-}
-else{
-  //console.log ('I give up!');
-  alert('I give up!');
-}
+askGoal();
 
 //Q6 = Guess a number; 4 attempts
 var guessCount = 1;
