@@ -155,45 +155,48 @@ askSecretNumber();
 //Q7 = guess answer with multiple correct answers; 6 attempts;
 //display all correct answers if correct guess or 6 attempts
 
-var guessCount2 = 1;
-var countryRight = false;
-var countryArr = ['US', 'Germany', 'Greenland', 'England', 'Iraq'];
+function askCountry(){
+  var guessCount2 = 1;
+  var countryRight = false;
+  var countryArr = ['US', 'Germany', 'Greenland', 'England', 'Iraq'];
 
-while ((guessCount2 <= 6) && (countryRight === false)){
-  var country = prompt('Guess a country I\'ve live in').toLowerCase();
-  var index;
-  for (index= 0; index <= 4; index ++){
-  // check array for match to var country
-    if (country === countryArr[index].toLowerCase()){
-      countryRight = true;
-      correct ++;
+  while ((guessCount2 <= 6) && (countryRight === false)){
+    var country = prompt('Guess a country I\'ve live in').toLowerCase();
+    var index;
+    for (index= 0; index <= 4; index ++){
+    // check array for match to var country
+      if (country === countryArr[index].toLowerCase()){
+        countryRight = true;
+        correct ++;
+      }
+    }
+    if (countryRight === false){
+      //console.log ('Try again.');
+      alert ('Try again.');
+      guessCount2 ++;
     }
   }
-  if (countryRight === false){
-    //console.log ('Try again.');
-    alert ('Try again.');
-    guessCount2 ++;
+  //wrong--show country list messages
+  if ((guessCount2 > 6) && (countryRight === false)){
+    //console.log ('Sorry.  You\'re out of guesses.  The contries are: ');
+    alert ('Sorry.  You\'re out of guesses.  The countries are: ');
   }
-}
-//wrong--show country list messages
-if ((guessCount2 > 6) && (countryRight === false)){
-  //console.log ('Sorry.  You\'re out of guesses.  The contries are: ');
-  alert ('Sorry.  You\'re out of guesses.  The countries are: ');
-}
-else{
-  //console.log ('Yay. You guessed one! The countries are: ');
-  alert ('Yay. You guessed one! The countries are: ');
-  countryRight = true;
-}
+  else{
+    //console.log ('Yay. You guessed one! The countries are: ');
+    alert ('Yay. You guessed one! The countries are: ');
+    countryRight = true;
+  }
 
-//show country list
-var countryList = '';
-for (index = 0; index < countryArr.length; index++){
-  countryList += countryArr[index] + '\n';
-}
+  //show country list
+  var countryList = '';
+  for (index = 0; index < countryArr.length; index++){
+    countryList += countryArr[index] + '\n';
+  }
 
-//console.log (countryList);
-alert (countryList);
+  //console.log (countryList);
+  alert (countryList);
+}
+askCountry();
 
 //display final message including name
 //console.log('You got ' + correct + ' out of 7 correct. Thanks for playing, ' + userName);
