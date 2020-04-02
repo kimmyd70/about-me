@@ -115,39 +115,42 @@ function askGoal(){
 askGoal();
 
 //Q6 = Guess a number; 4 attempts
-var guessCount = 1;
-var numRight = false;
+function askSecretNumber(){
+  var guessCount = 1;
+  var numRight = false;
 
-while ((guessCount <= 4) && (numRight === false)){
-  var secretNum = prompt('Guess a number between 0 and 200');
+  while ((guessCount <= 4) && (numRight === false)){
+    var secretNum = prompt('Guess a number between 0 and 200');
 
-  if ((secretNum < 151) && (secretNum >= 0) && (secretNum !== '')) {
-    //console.log ('The secret number is higher.');
-    alert ('The secret number is higher.');
-  }
-  else if (secretNum === '151'){
-    //console.log ('Yay. You guessed the secret number!');
-    alert ('Yay. You guessed the secret number!');
-    numRight = true;
-    correct ++;
-  }
-  else if ((secretNum > 151) && (secretNum <= 200) && (secretNum !== '')){
-    //console.log ('The secret number is lower.');
-    alert ('The secret number is lower.');
-  }
-  else {
-    //console.log ('Please guess a number between 100 and 200');
-    alert ('Please guess a number between 100 and 200');
+    if ((secretNum < 151) && (secretNum >= 0) && (secretNum !== '')) {
+      //console.log ('The secret number is higher.');
+      alert ('The secret number is higher.');
+    }
+    else if (secretNum === '151'){
+      //console.log ('Yay. You guessed the secret number!');
+      alert ('Yay. You guessed the secret number!');
+      numRight = true;
+      correct ++;
+    }
+    else if ((secretNum > 151) && (secretNum <= 200) && (secretNum !== '')){
+      //console.log ('The secret number is lower.');
+      alert ('The secret number is lower.');
+    }
+    else {
+      //console.log ('Please guess a number between 100 and 200');
+      alert ('Please guess a number between 100 and 200');
 
+    }
+    guessCount ++;
   }
-  guessCount ++;
+
+  //wrong show secret number
+  if ((guessCount > 4) && (numRight === false)){
+    //console.log ('Good try. The secret number is 151.');
+    alert ('Good try. The secret number is 151.');
+  }
 }
-
-//wrong show secret number
-if ((guessCount > 4) && (numRight === false)){
-  //console.log ('Good try. The secret number is 151.');
-  alert ('Good try. The secret number is 151.');
-}
+askSecretNumber();
 
 //Q7 = guess answer with multiple correct answers; 6 attempts;
 //display all correct answers if correct guess or 6 attempts
