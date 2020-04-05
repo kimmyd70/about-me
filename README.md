@@ -1,5 +1,8 @@
 # about-me
 
+## Lab 5 
+removed console logs for final submission
+
 ## Lab 4
 
 + Driver: Ashley Casimir
