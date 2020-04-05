@@ -118,17 +118,9 @@ function askSecretNumber(){
     guessCount ++;
   }
 
-<<<<<<< HEAD
 //wrong show secret number
 if ((guessCount > 4) && (numRight === false)){
   alert ('Good try. The secret number is 151.');
-=======
-  //wrong show secret number
-  if ((guessCount > 4) && (numRight === false)){
-    //console.log ('Good try. The secret number is 151.');
-    alert ('Good try. The secret number is 151.');
-  }
->>>>>>> 93061fe3bf6ca4c11aa6be4da84fd66754974271
 }
 askSecretNumber();
 
@@ -156,7 +148,6 @@ function askCountry(){
       guessCount2 ++;
     }
   }
-<<<<<<< HEAD
   if (countryRight === false){
     alert ('Try again.');
     guessCount2 ++;
@@ -170,18 +161,6 @@ else{
   alert ('Yay. You guessed one! The countries are: ');
   countryRight = true;
 }
-=======
-  //wrong--show country list messages
-  if ((guessCount2 > 6) && (countryRight === false)){
-    //console.log ('Sorry.  You\'re out of guesses.  The contries are: ');
-    alert ('Sorry.  You\'re out of guesses.  The countries are: ');
-  }
-  else{
-    //console.log ('Yay. You guessed one! The countries are: ');
-    alert ('Yay. You guessed one! The countries are: ');
-    countryRight = true;
-  }
->>>>>>> 93061fe3bf6ca4c11aa6be4da84fd66754974271
 
   //show country list
   var countryList = '';
@@ -189,14 +168,7 @@ else{
     countryList += countryArr[index] + '\n';
   }
 
-<<<<<<< HEAD
 alert (countryList);
-=======
-  //console.log (countryList);
-  alert (countryList);
-}
-askCountry();
->>>>>>> 93061fe3bf6ca4c11aa6be4da84fd66754974271
 
 //display final message including name
 alert('You got ' + correct + ' out of 7 correct. Thanks for playing, ' + userName);
