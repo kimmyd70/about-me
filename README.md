@@ -1,4 +1,11 @@
 # about-me
+
+## Lab 4
+
++ Driver: Ashley Casimir
++ Navigator: Kim Damalas
++ This code was worked on together
+
 ## About me guessing game for Lab 2
 
 1--As a user, I would like to learn about the site owner so I can get to know them better..
