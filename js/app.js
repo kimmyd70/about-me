@@ -1,8 +1,10 @@
 'use strict';
 
+//REMEMBER to comment out console logs
 
 //Display personal welcome
 var userName = prompt('Hi. What\'s your name?');
+//console.log('The user\'s name is: ' + userName);
 alert('Hi ' + userName + '. Welcome!');
 
 //Count number of right answers
@@ -15,15 +17,19 @@ var correct = 0;
 function askReady(){
   var ready = prompt('Are you ready to play a quiz?').toLowerCase();
 
-if ((ready === 'y') || (ready === 'yes')){
-  alert ('Great.  Let\'s start.');
-  correct ++;
-}
-else if ((ready ==='n') || (ready ==='no')){
-  alert('Take a deep breath.  It\'ll be ok.  Here we go!');
-}
-else{
-  alert('I said....Are.  You.  Ready??');
+  if ((ready === 'y') || (ready === 'yes')){
+    //console.log ('Great.  Let\'s start.');
+    alert ('Great.  Let\'s start.');
+    correct ++;
+  }
+  else if ((ready ==='n') || (ready ==='no')){
+    //console.log ('Ok.  Take a deep breath and refresh the page when you are ready');
+    alert('Take a deep breath.  It\'ll be ok.  Here we go!');
+  }
+  else{
+    //console.log ('I said....Are.  You.  Ready??');
+    alert('I said....Are.  You.  Ready??');
+  }
 }
 askReady();
 
@@ -32,15 +38,19 @@ askReady();
 function askColor(){
   var color = prompt('Take a look at my site. Do you think my favorite color is purple?').toLowerCase();
 
-if ((color === 'y') || (color === 'yes')){
-  alert ('It\'s obvious, isn\'t it!');
-  correct ++;
-}
-else if ((color ==='n') || (color ==='no')){
-  alert('Really?  It\'s not obvious?!');
-}
-else{
-  alert('You\'re not reading the question, are you?');
+  if ((color === 'y') || (color === 'yes')){
+    //console.log ('It\'s obvious, isn\'t it!');
+    alert ('It\'s obvious, isn\'t it!');
+    correct ++;
+  }
+  else if ((color ==='n') || (color ==='no')){
+    //console.log ('Really?  It\'s not obvious?!');
+    alert('Really?  It\'s not obvious?!');
+  }
+  else{
+    //console.log ('You\'re not reading the question, are you?');
+    alert('You\'re not reading the question, are you?');
+  }
 }
 askColor();
 
@@ -48,15 +58,19 @@ askColor();
 function askGreek(){
   var greek = prompt('Do you think my last name is Greek?').toLowerCase();
 
-if ((greek === 'y') || (greek === 'yes')){
-  alert ('Yep. The spelling gives it away');
-  correct ++;
-}
-else if ((greek ==='n') || (greek ==='no')){
-  alert('My name and my nose are Greek.  You couldn\'t tell?');
-}
-else{
-  alert('These questions aren\'t THAT hard.');
+  if ((greek === 'y') || (greek === 'yes')){
+    //console.log ('Yep. The spelling gives it away');
+    alert ('Yep. The spelling gives it away');
+    correct ++;
+  }
+  else if ((greek ==='n') || (greek ==='no')){
+    //console.log ('My name and my nose are Greek.  You couldn\'t tell?');
+    alert('My name and my nose are Greek.  You couldn\'t tell?');
+  }
+  else{
+    //console.log ('These questions aren\'t THAT hard.');
+    alert('These questions aren\'t THAT hard.');
+  }
 }
 askGreek();
 
@@ -64,15 +78,19 @@ askGreek();
 function askDegree(){
   var degree = prompt('Does anyone realllly need 3 Master\'s degrees?').toLowerCase();
 
-if ((degree === 'y') || (degree === 'yes')){
-  alert ('I know, right?!');
-  correct ++;
-}
-else if ((degree ==='n') || (degree ==='no')){
-  alert('Well....I like to learn');
-}
-else{
-  alert('C\'mon! Pay attention!');
+  if ((degree === 'y') || (degree === 'yes')){
+    //console.log ('I know, right?!');
+    alert ('I know, right?!');
+    correct ++;
+  }
+  else if ((degree ==='n') || (degree ==='no')){
+    //console.log ('Well....I like to learn');
+    alert('Well....I like to learn');
+  }
+  else{
+    //console.log ('C\'mon! Pay attention!');
+    alert('C\'mon! Pay attention!');
+  }
 }
 askDegree();
 
@@ -80,15 +98,19 @@ askDegree();
 function askGoal(){
   var goal = prompt('Working from home is pretty sweet, isn\'t it?').toLowerCase();
 
-if ((goal === 'y') || (goal === 'yes')){
-  alert ('Yoga Pants!!');
-  correct ++;
-}
-else if ((goal ==='n') || (goal ==='no')){
-  alert('Weirdo. I guess you like leaving your house.');
-}
-else{
-  alert('I give up!');
+  if ((goal === 'y') || (goal === 'yes')){
+    //console.log ('Yoga Pants!!');
+    alert ('Yoga Pants!!');
+    correct ++;
+  }
+  else if ((goal ==='n') || (goal ==='no')){
+    //console.log ('Weirdo. I guess you like leaving your house.');
+    alert('Weirdo. I guess you like leaving your house.');
+  }
+  else{
+    //console.log ('I give up!');
+    alert('I give up!');
+  }
 }
 askGoal();
 
@@ -100,27 +122,33 @@ function askSecretNumber(){
   while ((guessCount <= 4) && (numRight === false)){
     var secretNum = prompt('Guess a number between 0 and 200');
 
-  if ((secretNum < 151) && (secretNum >= 0) && (secretNum !== '')) {
-    alert ('The secret number is higher.');
-  }
-  else if (secretNum === '151'){
-    alert ('Yay. You guessed the secret number!');
-    numRight = true;
-    correct ++;
-  }
-  else if ((secretNum > 151) && (secretNum <= 200) && (secretNum !== '')){
-    alert ('The secret number is lower.');
-  }
-  else {
-    alert ('Please guess a number between 100 and 200');
+    if ((secretNum < 151) && (secretNum >= 0) && (secretNum !== '')) {
+      //console.log ('The secret number is higher.');
+      alert ('The secret number is higher.');
+    }
+    else if (secretNum === '151'){
+      //console.log ('Yay. You guessed the secret number!');
+      alert ('Yay. You guessed the secret number!');
+      numRight = true;
+      correct ++;
+    }
+    else if ((secretNum > 151) && (secretNum <= 200) && (secretNum !== '')){
+      //console.log ('The secret number is lower.');
+      alert ('The secret number is lower.');
+    }
+    else {
+      //console.log ('Please guess a number between 100 and 200');
+      alert ('Please guess a number between 100 and 200');
 
     }
     guessCount ++;
   }
 
-//wrong show secret number
-if ((guessCount > 4) && (numRight === false)){
-  alert ('Good try. The secret number is 151.');
+  //wrong show secret number
+  if ((guessCount > 4) && (numRight === false)){
+    //console.log ('Good try. The secret number is 151.');
+    alert ('Good try. The secret number is 151.');
+  }
 }
 askSecretNumber();
 
@@ -148,19 +176,16 @@ function askCountry(){
       guessCount2 ++;
     }
   }
-  if (countryRight === false){
-    alert ('Try again.');
-    guessCount2 ++;
+  //wrong--show country list messages
+  if ((guessCount2 > 6) && (countryRight === false)){
+    //console.log ('Sorry.  You\'re out of guesses.  The contries are: ');
+    alert ('Sorry.  You\'re out of guesses.  The countries are: ');
   }
-}
-//wrong--show country list messages
-if ((guessCount2 > 6) && (countryRight === false)){
-  alert ('Sorry.  You\'re out of guesses.  The countries are: ');
-}
-else{
-  alert ('Yay. You guessed one! The countries are: ');
-  countryRight = true;
-}
+  else{
+    //console.log ('Yay. You guessed one! The countries are: ');
+    alert ('Yay. You guessed one! The countries are: ');
+    countryRight = true;
+  }
 
   //show country list
   var countryList = '';
@@ -168,7 +193,11 @@ else{
     countryList += countryArr[index] + '\n';
   }
 
-alert (countryList);
+  //console.log (countryList);
+  alert (countryList);
+}
+askCountry();
 
 //display final message including name
+//console.log('You got ' + correct + ' out of 7 correct. Thanks for playing, ' + userName);
 alert('You got ' + correct + ' out of 7 correct. Thanks for playing, ' + userName);
